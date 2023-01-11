@@ -1,0 +1,12 @@
+.input {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 0px 5px 1px grey;
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:focus {
+    border-radius: 15px;
+    outline: none;
+  }
+}

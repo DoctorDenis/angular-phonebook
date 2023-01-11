@@ -1,0 +1,25 @@
+<div class="form-backdrop" #modal [style.display]="modalState">
+  <svg
+    class="form-close"
+    viewBox="0 0 10 10"
+    xmlns="http://www.w3.org/2000/svg"
+    (click)="closeModal(modal)"
+  >
+    <g stroke="red" stroke-width="2">
+      <line x1="0" y1="0" x2="10" y2="10" stroke="red" />
+      <line x1="0" y1="10" x2="10" y2="0" stroke="red" />
+    </g>
+  </svg>
+
+  <form class="form" (keydown.escape)="closeModal(modal)">
+    <label for="name">Your name</label>
+    <input type="text" name="name" id="name" />
+    <label for="surname">Your surname</label>
+    <input type="text" name="surname" id="surname" />
+    <label for="age">Your age</label>
+
+    <input type="number" name="age" id="age" />
+    <input type="submit" value="Submit" />
+    <input (click)="closeModal(modal)" type="button" value="Cancel" />
+  </form>
+</div>

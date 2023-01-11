@@ -1,0 +1,33 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, auto);
+}
+
+.header {
+  width: 100%;
+  outline: 1px solid black;
+  background-color: darkgrey;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: min-content auto;
+}
+
+.searchtab {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+}
+
+.logo {
+  width: auto;
+  height: 50px;
+  justify-self: start;
+  align-self: center;
+}
+
+.header-title {
+  justify-self: center;
+  align-self: center;
+}
